@@ -11,8 +11,45 @@
 </head>
 
 <body>
+    <p id="name">My Name is Gareth</p>
+    
 <h1>Example Domain</h1>
-<button>Click Here</button>
+<p><button onclick="alert('You Clicked Me');">Click Here</button></p>
 
+<p><button id="button">Click Again</button></p>
+
+<p><button id="button3">Button Three</button></p>
+
+<p><button id="button4">Button Four</button></p>
+
+<p><button id="button5">Button Five</button></p>
+
+<div id="firstDiv">This is some text</div>
+
+<div id="secondDiv"></div>
+
+
+<script>
+    //alert(document.getElementById("name").innerHTML);
+    
+    document.getElementById("name").innerHTML="My Name is Gareth Thomas";
+    
+    document.getElementById("button").onclick=function(){
+        document.getElementById("name").innerHTML="My Name is Gareth Morgan Thomas";
+    };
+    
+    document.getElementById("button3").onclick=function(){
+        document.getElementById("firstDiv").innerHTML="Lorem Ipsum";
+    };
+    
+    document.getElementById("button4").onclick=function(){
+        document.getElementById("firstDiv").innerHTML=document.getElementById("firstDiv").innerHTML + " This is great";
+    };
+    
+    document.getElementById("button5").onclick=function(){
+        document.getElementById("secondDiv").innerHTML="<ul><li>Apples</li><li>Pears</li><li>Oranges</li></ul>";
+    };     
+    
+</script>
 </body>
 </html>
